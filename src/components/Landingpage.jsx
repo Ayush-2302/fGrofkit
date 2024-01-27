@@ -9,7 +9,7 @@ const LandingPage = () => {
       {/* Hero Section */}
       <div className="bg-yellow-400 flex   mx-auto justify-center items-center  text-white py-20 h-[460px]">
         <div className="">
-          <h1 className="text-5xl text-black font-extrabold mb-4">
+          <h1 className="text-5xl text-black font-extrabold mb-4 p-10">
             {/* Delicious Meals, Delivered Fast */}
             Going to rock on web soon...
           </h1>
