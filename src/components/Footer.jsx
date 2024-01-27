@@ -1,13 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-
-
-
 import { TiSocialFacebook } from "react-icons/ti";
 import { FaDiscord, FaDribbble, FaGithub, FaTwitter } from "react-icons/fa6";
-import { BiCartAlt } from "react-icons/bi";
+// import { BiCartAlt } from "react-icons/bi";
 
+// import logo from "../assert/grofkiticon2.png";
 export default function Footer() {
   return (
     <footer className="bg-white border-y">
@@ -15,7 +12,8 @@ export default function Footer() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
-            <BiCartAlt className="text-yellow-500 text-8xl"/><p className=" font-bold tracking-widest px-1 text-4xl		">ROFKIT</p>
+              {/* <BiCartAlt className="text-yellow-500 text-8xl"/><p className=" font-bold tracking-widest px-1 text-4xl		">ROFKIT</p> */}
+              {/* <img src={logo} alt="logo" className="w-1/2"/> */}
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

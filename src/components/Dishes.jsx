@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from "../assert/dish1.avif";
-import img2 from "../assert/dish6.avif";
-import img3 from "../assert/dish3.avif";
-import img4 from "../assert/dish4.webp";
-import img5 from "../assert/dish5.webp";
-import img6 from "../assert/dish6.avif";
+import img1 from "../assert/dish/dish1.avif";
+import img2 from "../assert/dish/dish6.avif";
+import img3 from "../assert/dish/dish3.avif";
+import img4 from "../assert/dish/dish4.webp";
+import img5 from "../assert/dish/dish5.webp";
+import img6 from "../assert/dish/dish6.avif";
 import DishesCard from "../layout/DishCard";
 
 const Dishes = () => {
