@@ -14,7 +14,6 @@ function App() {
   return (
     <Darkmode>
       <Router>
-        {/* <Navbar /> */}
         <Nave2/>
         <Routes>
           <Route exact path="/" element={<LandingPage />} />

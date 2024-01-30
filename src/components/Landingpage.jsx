@@ -26,6 +26,7 @@ const LandingPage = () => {
           </Link>
         </div>
       </div>
+      
 
       {/* How It Works Section */}
       <div className="container mx-auto mt-16">
