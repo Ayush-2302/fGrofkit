@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { TiSocialFacebook } from "react-icons/ti";
 import { FaDiscord, FaDribbble, FaGithub, FaTwitter } from "react-icons/fa6";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
 // import { BiCartAlt } from "react-icons/bi";
 
 // import logo from "../assert/grofkiticon2.png";
@@ -11,9 +12,15 @@ export default function Footer() {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <Link to="/" className="flex items-center">
-              {/* <BiCartAlt className="text-yellow-500 text-8xl"/><p className=" font-bold tracking-widest px-1 text-4xl		">ROFKIT</p> */}
-              {/* <img src={logo} alt="logo" className="w-1/2"/> */}
+            <Link
+              to="https://play.google.com/store/apps/details?id=com.apponward.grofKit&hl=en&gl=US"
+              className="flex items-center"
+            >
+              <button className="bg-gray-200 flex items-center gap-5 hover:bg-gray-100 text-black px-8 py-2 rounded-full font-bold">
+                <IoLogoGooglePlaystore className=" text-3xl" />
+                <p className="">Get it on Play Store</p>
+                {/* <p className="">Play Store</p> */}
+              </button>
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

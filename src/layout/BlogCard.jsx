@@ -27,15 +27,23 @@ const blog = [
     date: Date(),
     img: "https://blinkit.com/careers/sites/default/files/2021-12/career-organisation.png",
   },
+  {
+    title: "Grofkit",
+    content:
+      "Experience convenience at your doorstep with our grocery delivery app. Browse a vast selection, place orders effortlessly, and enjoy fresh, quality produce delivered straight to your home.",
+    author: "ayush",
+    date: Date(),
+    img: "https://blinkit.com/careers/sites/default/files/2021-12/career-organisation.png",
+  },
 ];
 
 const BlogCard = () => {
   return (
     <>
-      <div className="grid lg:grid-cols-3 gap-8 md:grid-cols-2 sm:grid-col-1 p-5 ">
+      <div className="grid lg:grid-cols-2 gap-16 md:grid-cols-2 sm:grid-col-1 p-5 ">
         {blog.map((ele) => (
-          <div className="max-w-md mx-auto bg-white shadow-md overflow-hidden md:max-w-2xl">
-            <div className=" shadow-inner">
+          <div className="  mx-auto bg-white shadow-md overflow-hidden">
+            <div className=" shadow-inner ">
               <div className="md:flex-shrink-0">
                 <img
                   className=" object-cover h-5/6 w-full"

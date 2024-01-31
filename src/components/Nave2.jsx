@@ -78,8 +78,9 @@ function Nave2() {
                 id="mobile-menu-2"
               >
                 <div className=" nav-item flex flex-col mt-4 font-semibold lg:flex-row  text-base lg:space-x-8 lg:mt-0">
-                  {menu.map((ele) => (
+                  {menu.map((ele,index) => (
                     <NavLink
+                    key={index}
                       to={ele.to}
                       className={({ isActive }) =>
                         `block py-2 pr-4 pl-3 duration-200 ${
