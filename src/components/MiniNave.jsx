@@ -12,8 +12,8 @@ const MiniNave = () => {
       manuName: "About",
     },
     {
-      to: "/menu",
-      manuName: "Menu",
+      to: "/partner",
+      manuName: "Partner",
     },
     {
       to: "/blog",
