@@ -8,8 +8,8 @@ import TeamMem from "./TeamMem";
 const About = () => {
   return (
     <>
-      <div className=" bg-yellow-400  h-[460px]  text-white pb-10">
-        <div className=" banner flex justify-center w-full h-[330px] ">
+      <div className="banner bg-yellow-400  h-[460px]  text-white pb-10">
+        <div className="  flex justify-center w-full h-[330px] ">
           <img
             src={banner}
             alt="banner "
@@ -23,7 +23,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="container p-5 mx-auto">
+      <div className="  lg:px-44 md:p-20 sm:10 p-5 pt-10 pb-10 mx-auto">
         <section>
           <h1 className=" text-3xl ">About us</h1>
           <p className=" p-5">

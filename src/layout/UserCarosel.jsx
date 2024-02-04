@@ -33,45 +33,41 @@ const UserCarosel = () => {
 
   return (
     <div>
-      <div className="flex items-center gap-4  p-5  ">
+      <div className=" flex items-center gap-4 lg:px-32  sm:10 p-5 pb-10  ">
         <div
-          className="previous hidden border-2 rounded-full  md:flex lg:flex justify-center items-center w-14 h-14"
+          className="previous hidden border-2 rounded-full  md:flex lg:flex justify-center items-center w-8 h-8"
           onClick={handlePrevious}
         >
-          <RiArrowLeftSLine className="  text-3xl  " />
+          <RiArrowLeftSLine className="  text-xl  " />
         </div>
 
-        <div className=" bg-[#29292b] rounded-lg w-full  p-10 ">
+        <div className=" bg-[#29292b] rounded-lg  w-full  p-10  ">
+          <div className="coma absolute -translate-x-3">
+            <RiDoubleQuotesL className=" text-2xl  text-white" />
+          </div>
           {Carosel.map((ele, index) => (
             <>
-              {/* <div className="coma">
-                    <RiDoubleQuotesL className=" text-2xl text-white" />
-                  </div> */}
               <div
-                className={`grid lg:grid-cols-2  h-full  ${
-                  index === pic ? "block" : "hidden"
+                className={`grid lg:grid-cols-2 gap-x-20  h-[90%]  ${
+                  index === pic ? "" : "hidden"
                 }`}
               >
-                <div className="text text-white p-10 gap-y-10 ">
+                <div className="text text-white p-5  ">
                   <p> {ele.desc}</p>
                   <p className=" mt-10">-{ele.name}</p>
                 </div>
-                <div className=" w-full h-full  ">
-                  <img
-                    src={ele.img}
-                    alt="user "
-                    className={`object-center w-full h-80 rounded-md`}
-                  />
+                <div className=" w-full h-60  rounded-md overflow-hidden  ">
+                  <img src={ele.img} alt="user " className={` h-60 rounded-md w-full object-center`} />
                 </div>
               </div>
             </>
           ))}
         </div>
         <div
-          className="after border-2  hidden md:flex rounded-full lg:flex justify-center items-center w-14 h-14 "
+          className="after border-2  hidden md:flex rounded-full lg:flex justify-center items-center w-8 h-8 "
           onClick={handleafter}
         >
-          <RiArrowRightSLine className=" text-3xl  " />
+          <RiArrowRightSLine className=" text-xl  " />
         </div>
       </div>
     </div>

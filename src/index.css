@@ -28,3 +28,15 @@ code {
 .ReactCollapse--collapse {
   transition: height 500ms;
 }
+
+/* .slick-slide > div {
+  margin: 0 10px;
+} */
+
+.banner {
+  background-image: linear-gradient(#F8CB46, #318616)
+}
+
+.cust-scrollbar::-webkit-scrollbar {
+  display: none;
+}

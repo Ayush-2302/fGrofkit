@@ -28,21 +28,29 @@ function User() {
           ))}
       </div> */}
 
-      <div className="bg-yellow-400 h-[460px]  font-bold flex justify-center items-center text-white py-20">
+      <div className="banner bg-yellow-400 h-[460px]  font-bold flex justify-center items-center text-white py-20">
         <div className=" container">
           <section id="chef" className=" text-center  p-10  ">
-            <p className="text-lg  ">A Culinary Journey Like No Other</p>
-            <h1 className="text-4xl pt-3 text-black  mb-2">
-              Welcome to <span>GROFKIT</span>
-            </h1>
-            <p className=" uppercase text-lg mb-8 mx-auto pt-5  w-3/4 ">
-              "Learn about Grofkit "
-            </p>
+            <div className="  flex justify-center w-full h-[330px] ">
+              <img
+                src="https://blinkit.com/careers/sites/default/files/2022-03/career-masthead-desktop.png"
+                alt="banner "
+                className=" h-full lg:w-4/5 md:w-full "
+              />
+            </div>
+
+            <div className=" h-24 w-full flex  p-10 justify-center items-center ">
+              <p className=" font-bold text-xl text-white">
+                "Join us on a journey of endless growth and fulfillment, where
+                your aspirations meet boundless opportunities in shaping the
+                future together."
+              </p>
+            </div>
           </section>
         </div>
       </div>
 
-      <div className=" container    mx-auto p-10 ">
+      <div className="lg:px-44 md:p-20 sm:10 p-5 pt-10 pb-10">
         <h1 className="text-4xl text-black  mb-4">Our Motive</h1>
 
         <p className=" mb-20">
@@ -53,9 +61,8 @@ function User() {
           inspiration, or simply a good read, our blog is your go-to destination
           for staying informed and inspired in an ever-evolving landscape."
         </p>
-        
-        <BlogCard/>
 
+        <BlogCard />
       </div>
     </>
   );

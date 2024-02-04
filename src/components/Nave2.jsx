@@ -21,17 +21,18 @@ function Nave2() {
       menuName: "About",
     },
     {
-      to: "/menu",
-      menuName: "Menu",
+      to: "/carrier",
+      menuName: "Carrier",
+    },
+    {
+      to: "/partner",
+      menuName: "Partner",
     },
     {
       to: "/blog",
       menuName: "Blogs",
     },
-    {
-      to: "/carrier",
-      menuName: "Carrier",
-    },
+   
     {
       to: "/contact",
       menuName: "Contact",

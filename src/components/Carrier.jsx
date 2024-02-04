@@ -66,10 +66,10 @@ function Carrier() {
 
   return (
     <>
-      <div className="bg-yellow-400 h-[460px]  font-bold flex justify-center items-center text-white py-20">
+      <div className="banner bg-yellow-400 h-[460px]  font-bold flex justify-center items-center text-white py-20">
         <div className=" container">
           <section id="chef" className=" text-center  p-10  ">
-            <div className=" banner flex justify-center w-full h-[330px] ">
+            <div className=" flex justify-center w-full h-[330px] ">
               <img
                 src="https://blinkit.com/careers/sites/default/files/2022-03/career-masthead-desktop.png"
                 alt="banner "
@@ -101,23 +101,23 @@ function Carrier() {
           />
         ))}
       </div> */}
-      <div className=" lg:p-44 md:p-20 sm:10 p-5 pt-10 pb-0 space-y-16">
+      <div className=" lg:px-44 md:p-20 sm:10 p-5 pt-10  space-y-16">
         <section className="about">
-          <p className="text-3xl my-5 font-semibold">
-            {" "}
-            Better lives for more people
-          </p>
+          <p className="text-3xl my-5 font-semibold"> Carrier</p>
           <p className="">
-            To actualize our vision of better lives for more people, we use
-            proprietary technology to empower Indians – by creating increased
-            convenience, more savings, flourishing businesses, and stronger
-            communities. All this, while making everyday shopping a smoother,
-            happier experience for India. We are always looking for driven
-            individuals to join us in making instant commerce indistinguishable
-            from magic.
+            Our vision to create oppertunity. We use proprietary technology to
+            empower Indians - by revoluting convenient , more saving, flowless
+            business and a big business culture . All this while making every
+            shopping a smotter, unique Experience for Indian. We are always
+            looking for best and ambitious club to join and make the e-grocery
+            Industry wide . How we create club . Learning and development:- We
+            are building a learning organization and offer valuable
+            oppertunities for your skilling. Through mentorship knowledge
+            sharing forums , and self-placed learning programs. We will support
+            you in doing what you love . Come Join with us .
           </p>
         </section>
-        <section className="banner ">
+        <section className="poster ">
           <h1 className=" text-2xl my-10 font-semibold"> What set us apart</h1>
           <div className=" border-2 bg-[#14173c] p-10  rounded-lg">
             <img
@@ -136,7 +136,7 @@ function Carrier() {
           <BlogCard />
         </section>
 
-        <section className="banner ">
+        <section className="  ">
           <div className=" border-2 bg-[#282b59] p-10  rounded-lg">
             <img
               src="https://blinkit.com/careers/sites/default/files/2022-03/career-masthead-desktop.png"
@@ -159,15 +159,14 @@ function Carrier() {
           <h1 className=" text-2xl my-5 font-semibold"> How we nurture you </h1>
           <BlogCard />
         </section>
-
-        <section className="banner ">
-          <h1 className=" text-2xl my-10 font-semibold"> What set us apart</h1>
-          <div className="cla  flex justify-center">
-            <UserCarosel />
-          </div>
-        </section>
+        <h1 className=" text-2xl my-10 font-semibold"> What set us apart</h1>
+      </div>
+      <div className="c">
+        <UserCarosel />
+      </div>
+      <div className="lg:px-44 md:p-20 sm:10 p-5 pb-10">
         <section className=" accoedian">
-          <h1 className=" text-2xl my-10 font-semibold">
+          <h1 className=" text-2xl mb-10 font-semibold">
             Frequently asked questions
           </h1>
           <div className="px-10">
