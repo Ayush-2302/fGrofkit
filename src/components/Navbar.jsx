@@ -91,29 +91,30 @@ function Navbar() {
           </div>
         </nav>
 
-        <Collapse isOpened={true || false}>
-          {mini ? (
-            <div className=" navbar md:hidden ">
-              <div className=" nav-item font-semibold text-base  mt-0">
-                {menu.map((ele, index) => (
-                  <NavLink
-                    key={index}
-                    to={ele.to}
-                    className={({ isActive }) =>
-                      ` py-2 px-24 duration-200  shadow-inner  flex  hover:text-gray-400 ${
-                        isActive ? " text-gray-400" : "text-white"
-                      }`
-                    }
-                  >
-                    {ele.menuName}
-                  </NavLink>
-                ))}
-              </div>
+        {/* <Collapse isOpened={true || false}> */}
+        {mini ? (
+          <div className=" navbar md:hidden ">
+            <div className=" nav-item font-semibold text-base  mt-0">
+              {menu.map((ele, index) => (
+                <NavLink
+                  onClick={handleMini}
+                  key={index}
+                  to={ele.to}
+                  className={({ isActive }) =>
+                    ` py-2 px-24 duration-200  shadow-inner  flex  hover:text-gray-400 ${
+                      isActive ? " text-gray-400" : "text-white"
+                    }`
+                  }
+                >
+                  {ele.menuName}
+                </NavLink>
+              ))}
             </div>
-          ) : (
-            ""
-          )}
-        </Collapse>
+          </div>
+        ) : (
+          ""
+        )}
+        {/* </Collapse> */}
       </header>
     </>
   );
