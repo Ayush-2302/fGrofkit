@@ -7,14 +7,14 @@ import Login from "./components/Login";
 import Darkmode from "./context/Darkmode";
 import User from "./components/Blogs";
 import Carrier from "./components/Carrier";
-import Nave2 from "./components/Nave2";
+import Navbar from "./components/Navbar";
 
 import Partner from "./components/Partner";
 function App() {
   return (
     <Darkmode>
       <Router>
-        <Nave2/>
+        <Navbar />
         <Routes>
           <Route exact path="/" element={<LandingPage />} />
           <Route exact path="/blog" element={<User />} />
