@@ -2,31 +2,30 @@ import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import banner from "../assert/banner/Grofkit - Web Banners - 1000x330_Home Page.jpg";
 
 const LandingPage = () => {
   return (
     <div className="">
       {/* Hero Section */}
-      <div className="banner bg-yellow-400 flex   mx-auto justify-center items-center  text-white py-20 h-[460px]">
-        <div className="">
-          <h1 className="text-5xl text-black font-extrabold mb-4 p-10">
-            {/* Delicious Meals, Delivered Fast */}
-            Going to rock on web soon...
-          </h1>
-          <p className=" uppercase text-lg mb-8 text-center font-bold text-white">
-            {/* Going to rock on web soon... */}
-          </p>
-          <Link to="https://play.google.com/store/apps/details?id=com.apponward.grofKit&hl=en&gl=US">
-            <div className="flex justify-center">
-              <button className="bg-white flex items-center gap-2 hover:bg-gray-100 text-black  px-8 py-2 rounded-full font-bold">
-                <IoLogoGooglePlaystore className="  text-3xl" />
-                <span>Available on play store</span>
-              </button>
-            </div>
-          </Link>
+
+      <div className=" banner-bg  h-[500px]  text-white pb-10">
+        <div className="  flex justify-center w-full h-[430px] ">
+          <img
+            src={banner}
+            alt="banner "
+            className="  lg:w-10/12 md:w-full  "
+          />
         </div>
+          <div className="flex justify-center mt-4">
+        <Link to="https://play.google.com/store/apps/details?id=com.apponward.grofKit&hl=en&gl=US">
+            <button className="bg-white flex items-center gap-2 hover:bg-gray-100 text-black  px-8 py-2 rounded-full font-bold">
+              <IoLogoGooglePlaystore className="  text-3xl" />
+              <span>Available on play store</span>
+            </button>
+        </Link>
+          </div>
       </div>
-      
 
       {/* How It Works Section */}
       <div className="container mx-auto mt-16">

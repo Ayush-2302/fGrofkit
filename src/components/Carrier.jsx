@@ -1,6 +1,8 @@
 import BlogCard from "../layout/BlogCard";
 import CarrierAccordian from "../layout/CarrierAccordian";
-import CarrierCard from "../layout/CarrierCard";
+// import CarrierCard from "../layout/CarrierCard";
+import banner from "../assert/banner/Grofkit - Web Banners - 1000x330_Career.jpg";
+
 import UserCarosel from "../layout/UserCarosel";
 
 function Carrier() {
@@ -66,25 +68,18 @@ function Carrier() {
 
   return (
     <>
-      <div className="banner bg-yellow-400 h-[460px]  font-bold flex justify-center items-center text-white py-20">
-        <div className=" container">
-          <section id="chef" className=" text-center  p-10  ">
-            <div className=" flex justify-center w-full h-[330px] ">
-              <img
-                src="https://blinkit.com/careers/sites/default/files/2022-03/career-masthead-desktop.png"
-                alt="banner "
-                className=" h-full lg:w-4/5 md:w-full "
-              />
-            </div>
-
-            <div className=" h-24 w-full flex  p-10 justify-center items-center ">
-              <p className=" font-bold text-xl text-white">
-                "Join us on a journey of endless growth and fulfillment, where
-                your aspirations meet boundless opportunities in shaping the
-                future together."
-              </p>
-            </div>
-          </section>
+       <div className=" banner-bg  h-[500px]  text-white pb-10">
+        <div className="  flex justify-center w-full h-[430px] ">
+          <img
+            src={banner}
+            alt="banner "
+            className="  lg:w-10/12 md:w-full  "
+          />
+        </div>
+        <div className=" h-24 w-full flex justify-center items-center ">
+          <p className=" font-bold lg:text-4xl sm:text-2xl text-black mb-5">
+            Instant commerce indistinguishable from magic
+          </p>
         </div>
       </div>
       {/* <p className=" text-4xl  pt-10 text-center font-bold">We are hiring</p>
@@ -103,7 +98,7 @@ function Carrier() {
       </div> */}
       <div className=" lg:px-44 md:p-20 sm:10 p-5 pt-10  space-y-16">
         <section className="about">
-          <p className="text-3xl my-5 font-semibold"> Carrier</p>
+          <p className="text-3xl font-semibold"> Carrier</p>
           <p className="">
             Our vision to create oppertunity. We use proprietary technology to
             empower Indians - by revoluting convenient , more saving, flowless

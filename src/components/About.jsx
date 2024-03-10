@@ -1,23 +1,21 @@
 import React from "react";
 import Testimonials from "../layout/Testimonials";
-// import banner from "../assert/banner.webp";
-import banner from "../assert/banner.webp";
+import banner from "../assert/banner/Grofkit - Web Banners - 1000x330_About Us.jpg";
 import BlogCard from "../layout/BlogCard";
 import TeamMem from "./TeamMem";
-
 const About = () => {
   return (
     <>
-      <div className="banner bg-yellow-400  h-[460px]  text-white pb-10">
-        <div className="  flex justify-center w-full h-[330px] ">
+      <div className=" banner-bg  h-[500px]  text-white pb-10">
+        <div className="  flex justify-center w-full h-[430px] ">
           <img
             src={banner}
             alt="banner "
-            className=" h-full lg:w-4/5 md:w-full "
+            className="  lg:w-10/12 md:w-full  "
           />
         </div>
-        <div className=" h-24 w-full flex  p-10 justify-center items-center ">
-          <p className=" font-bold text-4xl text-white">
+        <div className=" h-24 w-full flex justify-center items-center ">
+          <p className=" font-bold lg:text-4xl sm:text-2xl text-black mb-5">
             Instant commerce indistinguishable from magic
           </p>
         </div>

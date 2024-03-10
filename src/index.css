@@ -34,9 +34,20 @@ code {
 } */
 
 .banner {
-  background-image: linear-gradient(#F8CB46, #318616)
+  background-image: linear-gradient(#ffcb31, #318616)
 }
 
+.banner-bg{
+background-color: #e9c810;
+}
 .cust-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+.contact-poster {
+  background-image:linear-gradient(#F8CB46, #318616);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
 }

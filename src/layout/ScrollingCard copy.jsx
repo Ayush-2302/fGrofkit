@@ -80,7 +80,7 @@ function ScrollingCardC() {
   ];
 
   return (
-    <div className=" cust-scrollbar  ease-in-out  overflow-auto flex gap-8">
+    <div className=" cust-scrollbar ease-in-out  overflow-auto flex gap-8">
         {cards.map((ele, index) => (
           <div className="">
             <Card

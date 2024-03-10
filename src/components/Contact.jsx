@@ -24,19 +24,19 @@ export default function Contact() {
 
   return (
     <>
-      <div className="bg-yellow-400  font-bold flex justify-center items-center text-black py-20">
-        <div className=" container ">
-          <section id="chef" className=" shadow-2xl text-center  p-10  ">
+      <div className="  font-bold flex justify-center items-center text-black py-20">
+        <div className=" w-full ">
+          <section id="chef" className=" shadow-2xl text-center  contact-poster p-10  ">
             <p className="text-lg  ">A Culinary Journey Like No Other</p>
             <h1 className="text-4xl pt-3 text-black  mb-2">
               Welcome to <span>GROFKIT</span>
             </h1>
 
-            <div className="relative flex items-top  p-10 rounded-lg  justify-center sm:items-center sm:pt-0">
-              <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
+            <div className="relative flex  items-top  gap-10 p-10 rounded-lg  justify-center sm:items-center sm:pt-0">
+              <div className="  w-full">
                 <div className="mt-8 overflow-hidden">
-                  <div className="grid grid-cols-1 md:grid-cols-2">
-                    <div className="p-6 mr-2 bg-gray-100 sm:rounded-lg">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="p-6 mr-2  bg-gray-50 opacity-70 hover:opacity-80 sm:rounded-lg">
                       <h1 className="text-3xl sm:text-4xl text-gray-800 font-extrabold tracking-tight">
                         Get in touch:
                       </h1>
@@ -50,7 +50,7 @@ export default function Contact() {
                           tikri, sector48, street-2
                         </div>
                       </div>
- 
+
                       <div className="flex items-center mt-4 border-gray-800">
                         <CiPhone className="text-3xl" />
                         <div className="ml-4 text-md tracking-wide font-semibold ">
@@ -82,7 +82,22 @@ export default function Contact() {
                         />
                       </div>
 
-                      <div className="flex flex-col mt-2">
+                      <div className="flex flex-col mt-1">
+                        <label htmlFor="number" className="hidden">
+                          Number
+                        </label>
+                        <input
+                          type="number"
+                          name="number"
+                          id="number"
+                          value={user.number}
+                          onChange={onChange}
+                          placeholder="Number"
+                          className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-800 text-gray-800 font-semibold focus:border-yellow-500 focus:outline-none"
+                        />
+                      </div>
+
+                      <div className="flex flex-col mt-1">
                         <label htmlFor="email" className="hidden">
                           Email
                         </label>
@@ -97,17 +112,32 @@ export default function Contact() {
                         />
                       </div>
 
-                      <div className="flex flex-col mt-2">
-                        <label htmlFor="number" className="hidden">
-                          Number
+                      <div className="flex flex-col mt-1">
+                        <label htmlFor="email" className="hidden">
+                          City
                         </label>
                         <input
-                          type="number"
-                          name="number"
-                          id="number"
-                          value={user.number}
-                          onChange={onChange}
-                          placeholder="Number"
+                          type="text"
+                          name="city"
+                          id="city"
+                          // value={user.email}
+                          // onChange={onChange}
+                          placeholder="City"
+                          className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-800 text-gray-800 font-semibold focus:border-yellow-500 focus:outline-none"
+                        />
+                      </div>
+
+                      <div className="flex flex-col mt-1">
+                        <label htmlFor="email" className="hidden">
+                          State
+                        </label>
+                        <input
+                          type="text"
+                          name="state"
+                          id="state"
+                          // value={user.email}
+                          // onChange={onChange}
+                          placeholder="State"
                           className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-800 text-gray-800 font-semibold focus:border-yellow-500 focus:outline-none"
                         />
                       </div>

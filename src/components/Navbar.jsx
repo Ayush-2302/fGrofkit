@@ -94,6 +94,7 @@ function Navbar() {
         {/* <Collapse isOpened={true || false}> */}
         {mini ? (
           <div className=" navbar md:hidden ">
+            <hr />
             <div className=" nav-item font-semibold text-base  mt-0">
               {menu.map((ele, index) => (
                 <NavLink
@@ -101,8 +102,8 @@ function Navbar() {
                   key={index}
                   to={ele.to}
                   className={({ isActive }) =>
-                    ` py-2 px-24 duration-200  shadow-inner  flex  hover:text-gray-400 ${
-                      isActive ? " text-gray-400" : "text-white"
+                    ` py-2 px-24 duration-200   flex  hover:text-gray-400 ${
+                      isActive ? " text-gray-400 " : "text-white"
                     }`
                   }
                 >
