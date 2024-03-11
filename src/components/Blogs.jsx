@@ -39,13 +39,11 @@ function User() {
               />
             </div>
 
-            <div className=" h-24 w-full flex  p-10 justify-center items-center ">
-              <p className=" font-bold text-xl text-white">
-                "Join us on a journey of endless growth and fulfillment, where
-                your aspirations meet boundless opportunities in shaping the
-                future together."
-              </p>
-            </div>
+            <div className=" h-24 w-full flex justify-center items-center ">
+          <p className=" font-bold lg:text-4xl sm:text-2xl text-black mb-5">
+            Instant commerce indistinguishable from magic
+          </p>
+        </div>
           </section>
         </div>
       </div>

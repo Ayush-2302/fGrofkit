@@ -71,7 +71,7 @@ function Navbar() {
               </div>
             </div>
 
-            <div className="  flex items-center ">
+            {/* <div className="  flex items-center ">
               <Link
                 to="/"
                 className="text-white  hover:bg-yellow-500 hover:text-black focus:ring-2 focus:ring-yellow-300 font-semibold  rounded-lg text-base px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
@@ -87,7 +87,7 @@ function Navbar() {
               <button className="  text-white pl-2 text-2xl" onClick={toggle}>
                 {mode === "light" ? <BiAlarm /> : <BiMoon />}
               </button>
-            </div>
+            </div> */}
           </div>
         </nav>
 
