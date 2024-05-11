@@ -8,12 +8,14 @@ export default function Contact() {
     name: "",
     email: "",
     number: "",
+    city: "",
+    state: "",
   });
 
   const handleClick = (e) => {
     e.preventDefault();
     addUser(user.name, user.email, user.number);
-    setUser({ name: "", email: "", number: "" });
+    setUser({ name: "", email: "", number: "", city: "", state: "" });
     console.log("added user");
     console.log(user);
   };
@@ -26,7 +28,10 @@ export default function Contact() {
     <>
       <div className="  font-bold flex justify-center items-center text-black py-20">
         <div className=" w-full ">
-          <section id="chef" className=" shadow-2xl text-center  contact-poster p-10  ">
+          <section
+            id="chef"
+            className=" shadow-2xl text-center  contact-poster p-10  "
+          >
             <p className="text-lg  ">A Culinary Journey Like No Other</p>
             <h1 className="text-4xl pt-3 text-black  mb-2">
               Welcome to <span>GROFKIT</span>
@@ -120,8 +125,8 @@ export default function Contact() {
                           type="text"
                           name="city"
                           id="city"
-                          // value={user.email}
-                          // onChange={onChange}
+                          value={user.state}
+                          onChange={onChange}
                           placeholder="City"
                           className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-800 text-gray-800 font-semibold focus:border-yellow-500 focus:outline-none"
                         />
@@ -135,8 +140,8 @@ export default function Contact() {
                           type="text"
                           name="state"
                           id="state"
-                          // value={user.email}
-                          // onChange={onChange}
+                          value={user.city}
+                          onChange={onChange}
                           placeholder="State"
                           className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-800 text-gray-800 font-semibold focus:border-yellow-500 focus:outline-none"
                         />
