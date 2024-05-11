@@ -16,7 +16,7 @@ function Darkmode(props) {
 
   const notesInitial = [];
   const [users, setUsers] = useState(notesInitial);
-  const host = "http://localhost:4000";
+  const host = "https://grofkit-backend-1.onrender.com";
 
   const fetchUser = async () => {
     const response = await fetch(`${host}/api/user/fetchalluser`, {
